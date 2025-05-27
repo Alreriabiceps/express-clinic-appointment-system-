@@ -6,7 +6,7 @@ const MONGO_URI = process.env.MONGODB_URI;
 
 async function createAdmin() {
   await mongoose.connect(MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true });
-  const email = '@admin';
+  const email = 'admin@example.com';
   const password = 'admin1234'; // Change this to a secure password in production
 
   try {
